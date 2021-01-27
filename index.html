@@ -22,8 +22,9 @@
                 </div>
             </div>
         </nav>
-        <span></span>
-        <span></span>
+        <span class="button_menu open" onclick="open_menu()">&#x2630;</span>
+        <span class="button_menu close" onclick="close_menu()">&#x2716;</span>
+        <div class="background" onclick="close_menu()"></div>
         <section>
             <div class="main">
                 <div>
@@ -35,31 +36,101 @@
                 <div class="menu_main">
                     <h1>Главная</h1>
                     <div class="div_nav">
-                        <div class="menu_element_div"><a href="#">Новости</a></div>
-                        <div class="menu_element_div"><a href="#">Родителям</a></div>
-                        <div class="menu_element_div"><a href="#">Ученикам</a></div>
-                        <div class="menu_element_div"><a href="#">Учителям</a></div>
-                        <div class="menu_element_div"><a href="#">Олимпиады</a></div>
-                        <div class="menu_element_div"><a href="#">ГАИ</a></div>
-                        <div class="menu_element_div"><a href="#">НОУ</a></div>
+                        <div class="menu_element_div"><a href="#news">Новости</a></div>
+                        <div class="menu_element_div"><a href="#mom">Родителям</a></div>
+                        <div class="menu_element_div"><a href="#uch">Ученикам</a></div>
+                        <div class="menu_element_div"><a href="#uchm">Учителям</a></div>
+                        <div class="menu_element_div"><a href="#olimp">Олимпиады</a></div>
+                        <div class="menu_element_div"><a href="#oge_ege">Экзамены</a></div>
                         <div class="menu_element_div"><a href="#">Конкурсы</a></div>
                         <div class="menu_element_div"><a href="#">СВЕДЕНИЯ ОБ ОУ</a></div>
                         <div class="menu_element_div"><a href="#">ОБР. РЕСУРСЫ</a></div>
                     </div>
                 </div>
-                <div class="news">
-                    <div class="text">
+                <div class="article" id="news">
+                    <div class="img_news">
+                        <img src="./img/shool.jpg" alt="#">
+                    </div>
+                    <div class="text text_1">
                         <h2>Новости</h2>
                         <p class="text_news">На этой странице размещены актуальные новости о жизни нашей школы, об урочной и внеурочной деятельности учащихся, анонсы текущих конкурсов и мероприятий, а так же результаты участия в них</p>
                         <span class="button"><a href="#">Открыть</a></span>
                     </div>
+                </div>
+                <div class="article" id="mom">
+                    <div class="img_news">
+                        <img src="./img/mom.jpg" alt="#">
+                    </div>
+                    <div class="text text_2">
+                        <h2>Родителям</h2>
+                        <p class="text_news">На этой странице Вы найдёте исчерпывающую информацию о порядке приема учащихся в ОУ, требованиям к школьной одежде и внешнему виду обучающихся, организации питания в школьной столовой и многое другое...</p>
+                        <span class="button"><a href="#">Открыть</a></span>
+                    </div>
+                </div>
+                <div class="article" id="uch">
+                    <div class="img_news">
+                        <img src="./img/uch.jpg" alt="#">
+                    </div>
+                    <div class="text text_1">
+                        <h2>Ученикам</h2>
+                        <p class="text_news">Здесь создаются индивидуальные образовательные траектории и условия для развития творческих и интеллектуальных способностей учащихся, осуществляется содействие профессиональному самоопределению школьников</p>
+                        <span class="button"><a href="#">Открыть</a></span>
+                    </div>
+                </div>
+                <div class="article" id="uchm">
+                    <div class="img_news">
+                        <img src="./img/uchm.jpg" alt="#">
+                    </div>
+                    <div class="text text_2">
+                        <h2>Учителям</h2>
+                        <p class="text_news">Материалы размещённые на этой странице помогут нашим учителям получать методическую помощь и актуальную информацию о предметных декадах, обмениваться опытом в рамках работы в ШМО ....</p>
+                        <span class="button"><a href="#">Открыть</a></span>
+                    </div>
+                </div>
+                <div class="article" id="oge_ege">
+                    <div class="img_news">
+                        <img src="./img/oge_ege.jpg" alt="#">
+                    </div>
+                    <div class="text text_1">
+                        <h2>Экзамены</h2>
+                        <p class="text_news">Что такое экзамены в жизни человека? Самый ответственный и сложный период. Именно на экзамене подводится итог учебной деятельности каждого школьника. На этой странице собрана вся инфрмация о проведении ГИА.</p>
+                        <span class="button"><a href="#">Открыть</a></span>
+                    </div>
+                </div>
+                <div class="article" id="olimp">
+                    <div class="img_news">
+                        <img src="./img/olimp.jpg" alt="#">
+                    </div>
+                    <div class="text text_2">
+                        <h2>Олимпиады</h2>
+                        <p class="text_news">На этой странице размещены наши достижения: результаты участия учащихся в предметных олимпиадах, конкурсах и соревнованиях.</p>
+                        <span class="button"><a href="#">Открыть</a></span>
+                    </div>
+                </div>
+                <div class="article" id="oge_ege">
+                    <div class="img_news">
+                        <img src="./img/oge_ege.jpg" alt="#">
+                    </div>
+                    <div class="text text_1">
+                        <h2>Сведения об ОУ</h2>
+                        <p class="text_news">Данный раздел содержит подробную информацию об образовательной организации, об учредителях, о реализуемых уровнях образования, о формах обучения, а так же правоустанавливающие документы и локальные нормативные акты.</p>
+                        <span class="button"><a href="#">Открыть</a></span>
+                    </div>
+                </div>
+                <div class="article" id="olimp">
                     <div class="img_news">
                         <img src="./img/shool.jpg" alt="#">
+                    </div>
+                    <div class="text text_2">
+                        <h2>Образовательные ресурсы</h2>
+                        <p class="text_news">На этой странице размещены ссылки на образовательные сайты: Минобрнауки России, Рособрнадзора, Департамента образования Вор. обл., администрации и отдела по образованию Таловского р-на, ФИПИ, портала ЕГЭ и др.</p>
+                        <span class="button"><a href="#">Открыть</a></span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,6 @@
 }
 
 main {
-    display: flex;
     min-height: 100vh;
 }
 
@@ -18,6 +17,9 @@ MENU
 nav {
     background-color: #f5f6f7;
     width: 21%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
 }
 
 .main_menu {
@@ -49,13 +51,42 @@ nav {
     border-bottom: solid #f56a6a 3px;
 }
 
+.button_menu {
+    display: none;
+    position: fixed;
+    font-size: 40px;
+    color: #f56a6a;
+    z-index: 99;
+}
+
+.background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000060;
+    z-index: 98;
+}
+
+.open {
+    top: 17px;
+    left: 17px;
+}
+
+.close {
+    top: 17px;
+    right: 17px;
+}
+
 
 /**************
 SECTION
 **************/
 
 section {
-    width: 100%;
+    width: 79%;
+    right: 0;
+    position: absolute;
 }
 
 .main {
@@ -71,6 +102,7 @@ section {
     padding: 20px;
     color: #000000b7;
     border-bottom: solid 3px #f56a6a;
+    text-transform: uppercase;
 }
 
 
@@ -108,20 +140,30 @@ menu_main
 
 
 /*****************
-news
+article
 *****************/
 
-.news {
+.article {
     display: flex;
     border-bottom: solid 1px #d9dfe2;
     padding: 17px 0 17px 0;
 }
 
 .text {
+    padding: 14px;
     width: 50%;
 }
 
+.text_1 {
+    order: 0;
+}
+
+.text_2 {
+    order: 2;
+}
+
 .img_news {
+    order: 1;
     width: 50%;
 }
 
@@ -138,6 +180,7 @@ news
 }
 
 .button a {
+    font-size: 23px;
     padding: 17px;
     margin: 0 auto;
     text-decoration: none;
@@ -150,4 +193,63 @@ news
 
 .text_news {
     padding: 13px;
+}
+
+
+/**********************
+media *******
+**********************/
+
+@media screen and (max-width: 920px) {
+    section {
+        width: 100%;
+    }
+    nav {
+        display: none;
+        width: 45%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 1.2em;
+    }
+    section {
+        width: 100%;
+    }
+    nav {
+        display: none;
+        width: 80%;
+    }
+    .open {
+        display: block;
+    }
+    .article {
+        display: block;
+    }
+    .text {
+        width: 100%;
+    }
+    .img_news {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 100%;
+    }
+    nav {
+        display: none;
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .close {
+        z-index: 101;
+    }
 }
