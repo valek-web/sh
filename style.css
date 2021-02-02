@@ -31,6 +31,10 @@ nav {
     margin: 0 auto;
 }
 
+.menu {
+    position: relative;
+}
+
 .menu_element {
     width: 100%;
     border-bottom: solid #dadfe1 1px;
@@ -55,7 +59,10 @@ nav {
 }
 
 .menu_element h3 {
-    background-color: rgba(0, 0, 0, 0.048);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(240, 240, 240);
     font-size: 1.3em;
 }
 
@@ -226,7 +233,7 @@ article
 media *******
 **********************/
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1024px) {
     section {
         width: 100%;
     }

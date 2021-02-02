@@ -15,27 +15,48 @@ let close_menu = () => {
  * stiky
  */
 
-let main_ = document.querySelector('#main_');
-let main_active = () => main_.getBoundingClientRect().top;
-let main_1 = document.querySelector('#main_1');
-let main_2 = document.querySelector('#main_2').pageYOffsetTop;
-let main_3 = document.querySelector('#main_3').pageYOffset;
-let main_4 = document.querySelector('#main_4').pageYOffset;
-let main_5 = document.querySelector('#main_5').pageYOffset;
-let main_6 = document.querySelector('#main_6');
+// let main_ = document.querySelector('#main_');
+// let main_1 = document.querySelector('#main_1');
+// let main_2 = document.querySelector('#main_2');
+// let main_3 = document.querySelector('#main_3');
+// let main_4 = document.querySelector('#main_4');
+// let main_5 = document.querySelector('#main_5');
+// let main_6 = document.querySelector('#main_6');
 
-let body_main = document.querySelector('.main_menu');
-let active_Y = () => Math.abs(document.querySelector('.menu_logo').getBoundingClientRect().top);
+// let main_active = () => main_.getBoundingClientRect().top;
+// let static = () => document.querySelector('#static').getBoundingClientRect().top;
+// let widthOne = () => String(main_1.offsetWidth) + 'px';
 
-window.addEventListener('scroll', i => {
-    console.log('he')
-})
+// let main_active1 = () => main_1.getBoundingClientRect().top;
+// let static1 = () => document.querySelector('#static1').getBoundingClientRect().top;
+// let widthOne1 = () => String(main_2.offsetWidth) + 'px';
 
-let scroll_menu = () => {
-    console.log('hi')
-    if (active_Y() > main_active()) {
-        main_.style.position = 'fixed';
-    }
-}
+// let body_main = document.querySelector('nav');
+// let active_Y = () => Math.abs(document.querySelector('.menu_logo').getBoundingClientRect().top);
 
-body_main.addEventListener('scroll', scroll_menu)
+// // window.addEventListener('scroll', i => {
+// //     console.log('he')
+// // })
+
+
+// let scroll_menu = () => {
+//     console.log('hi')
+//     if (active_Y() > main_active()) {
+//         main_.style.position = 'fixed';
+//         main_.style.width = widthOne();
+//         main_.style.top = 0;
+//         main_.style.zIndex = '1000';
+//     } else if (active_Y() < static()) {
+//         main_.style.position = 'static';
+//     }
+//     if (active_Y() > main_active1()) {
+//         main_1.style.position = 'fixed';
+//         main_1.style.width = widthOne1();
+//         main_1.style.top = 0;
+//         main_1.style.zIndex = '1001';
+//     } else if (active_Y() < static1()) {
+//         main_1.style.position = 'static';
+//     }
+// }
+
+// body_main.addEventListener('scroll', scroll_menu)
