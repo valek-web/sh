@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=480, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./../css/style.css">
 </head>
 
 <body>
@@ -15,14 +15,18 @@
                 <h2 class="menu_logo">Меню</h2>
                 <div class="menu">
                     <div class="menu_element">
-                        <h3 id="main_"><a href="#" class="glav_a">Ученикам</a></h3>
-                        <p><a href="#" class="noGlav" id="static">Расписание</a></p>
+                        <h3 id="main_"><a href="#" class="glav_a">Главное</a></h3>
+                        <p><a href="./news.html" class="noGlav" id="static">Новости</a></p>
+                        <p><a href="./pupils.html" class="noGlav" id="static">Ученикам</a></p>
+                        <p><a href="#" class="noGlav" id="static">Учителям</a></p>
+                        <p><a href="./parents.html" class="noGlav" id="static">Родителям</a></p>
+                        <p><a href="./OBR_resources.html" class="noGlav" id="static">обр. ресурсы</a></p>
                     </div>
                     <div class="menu_element">
-                        <h3 id="main_"><a href="#" class="glav_a">Сведения об ОУ</a></h3>
+                        <h3 id="main_"><a href="./info_OY.html" class="glav_a">Сведения об ОУ</a></h3>
                         <p><a href="#" class="noGlav" id="static">основные сведения</a></p>
                         <p><a href="#" class="noGlav">Органы оправления</a></p>
-                        <p><a href="#" class="noGlav">доументы</a></p>
+                        <p><a href="#" class="noGlav">документы</a></p>
                         <p><a href="#" class="noGlav">образование</a></p>
                         <p><a href="#" class="noGlav">оснощенность образовательного процесса</a></p>
                         <p><a href="#" class="noGlav">платные образовательные услуги</a></p>
@@ -30,6 +34,7 @@
                         <p><a href="#" class="noGlav">вакантные места для приема обучающихся</a></p>
                         <p><a href="#" class="noGlav">доступная среда</a></p>
                         <p><a href="#" class="noGlav">международное сотрудничество</a></p>
+                        <p><a href="#" class="noGlav">образовательные стандарты</a></p>
                     </div>
                 </div>
             </div>
@@ -37,6 +42,9 @@
         <span class="button_menu open" onclick="open_menu()">&#x2630;</span>
         <span class="button_menu close" onclick="close_menu()">&#x2716;</span>
         <div class="background" onclick="close_menu()"></div>
+        <div class="bunner_okko">
+            <a href="http://finevision.ru/?hostname=tal-school.ru&path=/"><img src="./../img/banner_okko.jpg" alt="#"></a>
+        </div>
         <section>
             <div class="main">
                 <div>
@@ -53,14 +61,12 @@
                         <div class="menu_element_div"><a href="#uch">Ученикам</a></div>
                         <div class="menu_element_div"><a href="#uchm">Учителям</a></div>
                         <div class="menu_element_div"><a href="#olimp">Олимпиады</a></div>
-                        <div class="menu_element_div"><a href="#oge_ege">Экзамены</a></div>
-                        <div class="menu_element_div"><a href="#OY">СВЕДЕНИЯ ОБ ОУ</a></div>
                         <div class="menu_element_div"><a href="#OR">ОБР. РЕСУРСЫ</a></div>
                     </div>
                 </div>
                 <div class="article" id="news">
                     <div class="img_news">
-                        <img src="./img/shool.jpg" alt="#">
+                        <img src="./../img/shool.jpg" alt="#">
                     </div>
                     <div class="text text_1">
                         <h2>Новости</h2>
@@ -70,27 +76,27 @@
                 </div>
                 <div class="article" id="mom">
                     <div class="img_news">
-                        <img src="./img/mom.jpg" alt="#">
+                        <img src="./../img/mom.jpg" alt="#">
                     </div>
                     <div class="text text_2">
                         <h2>Родителям</h2>
                         <p class="text_news">На этой странице Вы найдёте исчерпывающую информацию о порядке приема учащихся в ОУ, требованиям к школьной одежде и внешнему виду обучающихся, организации питания в школьной столовой и многое другое...</p>
-                        <span class="button"><a href="#">Открыть</a></span>
+                        <span class="button"><a href="./parents.html">Открыть</a></span>
                     </div>
                 </div>
                 <div class="article" id="uch">
                     <div class="img_news">
-                        <img src="./img/uch.jpg" alt="#">
+                        <img src="./../img/uch.jpg" alt="#">
                     </div>
                     <div class="text text_1">
                         <h2>Ученикам</h2>
                         <p class="text_news">Здесь создаются индивидуальные образовательные траектории и условия для развития творческих и интеллектуальных способностей учащихся, осуществляется содействие профессиональному самоопределению школьников</p>
-                        <span class="button"><a href="#">Открыть</a></span>
+                        <span class="button"><a href="./pupils.html">Открыть</a></span>
                     </div>
                 </div>
                 <div class="article" id="uchm">
                     <div class="img_news">
-                        <img src="./img/uchm.jpg" alt="#">
+                        <img src="./../img/uchm.jpg" alt="#">
                     </div>
                     <div class="text text_2">
                         <h2>Учителям</h2>
@@ -98,50 +104,20 @@
                         <span class="button"><a href="#">Открыть</a></span>
                     </div>
                 </div>
-                <div class="article" id="oge_ege">
-                    <div class="img_news">
-                        <img src="./img/oge_ege.jpg" alt="#">
-                    </div>
-                    <div class="text text_1">
-                        <h2>Экзамены</h2>
-                        <p class="text_news">Что такое экзамены в жизни человека? Самый ответственный и сложный период. Именно на экзамене подводится итог учебной деятельности каждого школьника. На этой странице собрана вся инфрмация о проведении ГИА.</p>
-                        <span class="button"><a href="#">Открыть</a></span>
-                    </div>
-                </div>
                 <div class="article" id="olimp">
                     <div class="img_news">
-                        <img src="./img/olimp.jpg" alt="#">
+                        <img src="./../img/shool.jpg" alt="#">
                     </div>
-                    <div class="text text_2">
-                        <h2>Олимпиады</h2>
-                        <p class="text_news">На этой странице размещены наши достижения: результаты участия учащихся в предметных олимпиадах, конкурсах и соревнованиях.</p>
-                        <span class="button"><a href="#">Открыть</a></span>
-                    </div>
-                </div>
-                <div class="article" id="oge_ege">
-                    <div class="img_news">
-                        <img src="./img/oge_ege.jpg" alt="#">
-                    </div>
-                    <div class="text text_1" id="OY">
-                        <h2>Сведения об ОУ</h2>
-                        <p class="text_news">Данный раздел содержит подробную информацию об образовательной организации, об учредителях, о реализуемых уровнях образования, о формах обучения, а так же правоустанавливающие документы и локальные нормативные акты.</p>
-                        <span class="button"><a href="#">Открыть</a></span>
-                    </div>
-                </div>
-                <div class="article" id="olimp">
-                    <div class="img_news">
-                        <img src="./img/shool.jpg" alt="#">
-                    </div>
-                    <div class="text text_2" id="OR">
+                    <div class="text text_1" id="OR">
                         <h2>Образовательные ресурсы</h2>
                         <p class="text_news">На этой странице размещены ссылки на образовательные сайты: Минобрнауки России, Рособрнадзора, Департамента образования Вор. обл., администрации и отдела по образованию Таловского р-на, ФИПИ, портала ЕГЭ и др.</p>
-                        <span class="button"><a href="#">Открыть</a></span>
+                        <span class="button"><a href="./OBR_resources.html">Открыть</a></span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./../script/script.js"></script>
 </body>
 
 </html>
