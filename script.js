@@ -10,11 +10,6 @@ let close_menu = () => {
     document.querySelector('.background').style.display = 'none';
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 07bbab9588b12ba935a1c1c29de909746f313ba5
 let noScrollSection = () => {
     document.querySelector('body').style.overflow = 'hidden'
 }
