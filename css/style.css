@@ -141,15 +141,8 @@ section {
 }
 
 ::-webkit-scrollbar {
-<<<<<<< HEAD
-    display: block;
     background-color: #f5f6f7;
     width: 7px;
-    position: absolute;
-=======
-    background-color: #f5f6f7;
-    width: 7px;
->>>>>>> 07bbab9588b12ba935a1c1c29de909746f313ba5
 }
 
 ::-webkit-scrollbar-thumb {
