@@ -10,8 +10,10 @@ let close_menu = () => {
     document.querySelector('.background').style.display = 'none';
 }
 
+
+
 let noScrollSection = () => {
-    document.querySelector('body').style.overflow = 'hidden'
+    document.querySelector('body').style.overflow = 'scroll'
 }
 
 let yesScrollSection = () => {
