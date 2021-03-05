@@ -13,7 +13,7 @@ let close_menu = () => {
 
 
 let noScrollSection = () => {
-    document.querySelector('body').style.overflow = 'scroll'
+    document.querySelector('body').style.overflow = 'hidden'
 }
 
 let yesScrollSection = () => {
